@@ -9,21 +9,25 @@
 
             var r = new Random();
             var favNumber = r.Next(1, 1000);
-            var userInput = int.Parse(Console.ReadLine());
-
-
-            if (userInput < favNumber)
+            var userInput = int.Parse(Console.ReadLine());//asking user for a number
+            
+            while (userInput != favNumber)
             {
-                Console.WriteLine("too low");
+            if (userInput < favNumber)//condition
+            {
+                Console.WriteLine("too low");//response
             }
-            else if (userInput > favNumber)
+            else if (userInput > favNumber)//condition
             {
-                Console.WriteLine("too high");
+                Console.WriteLine("too high");//response
             }
             else
             {
-                Console.WriteLine("You guessed it!!!");
+                Console.WriteLine("You guessed it!!!");//response
             }
+
+            }
+
         }
     }
 }
